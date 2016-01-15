@@ -17,4 +17,17 @@ public class GreetingRepository {
         return this.entityManager.createQuery("SELECT g FROM Greeting g", Greeting.class)
                 .getResultList();
     }
+
+    public Greeting find(Long id) {
+        return entityManager.find(Greeting.class,id);
+    }
+
+    public Long save(String content){
+        Greeting g = new Greeting();
+        g.setContent(content);
+        entityManager.persist(g);
+
+        return g.getId();
+    }
+
 }
