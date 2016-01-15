@@ -26,18 +26,18 @@ public class GreetingController {
                             String.format(template, name));
     }
 
-    @RequestMapping(path="/greetings", method=RequestMethod.GET)
+    @RequestMapping(path="/db_greetings", method=RequestMethod.GET)
     public List<Greeting> greetingsList() {
         return greetingRepository.findAll();
     }
 
-    @RequestMapping(path="/greeting", method=RequestMethod.GET)
-    public Greeting greetingDB(@RequestParam(value = "id")Long id) {
+    @RequestMapping(path="/db_greeting", method=RequestMethod.GET)
+    public Greeting getGreeting(@RequestParam(value = "id") Long id) {
         return greetingRepository.find(id);
     }
 
-    @RequestMapping(path="/greeting", method=RequestMethod.PUT)
-    public Long greetingDB(@RequestParam(value = "content")String content) {
+    @RequestMapping(path="/db_greeting", method=RequestMethod.PUT)
+    public Long addGreeting(@RequestParam(value = "content") String content) {
         return greetingRepository.save(content);
     }
 
