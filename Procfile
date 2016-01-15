@@ -1,1 +1,1 @@
-web: java -jar build/libs/gs-rest-service-*.jar 3218 --server.port=$PORT
+web: java -jar build/libs/single-jar-rest-*.jar 3218 --server.port=$PORT

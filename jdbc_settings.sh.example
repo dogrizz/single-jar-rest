@@ -1,0 +1,3 @@
+export JDBC_DATABASE_USERNAME="user"
+export JDBC_DATABASE_PASSWORD="pass"
+export JDBC_DATABASE_URL="url"
