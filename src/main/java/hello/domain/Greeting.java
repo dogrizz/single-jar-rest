@@ -7,10 +7,10 @@ public class Greeting {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private final long id;
+    private long id;
 
     @Column(name = "content",nullable = false)
-    private final String content;
+    private String content;
 
     public Greeting(long id, String content) {
         this.id = id;
