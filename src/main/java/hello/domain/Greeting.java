@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Greeting {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "seq_greeting")
     private long id;
 
     @Column(name = "content",nullable = false)
