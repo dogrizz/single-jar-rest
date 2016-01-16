@@ -6,6 +6,7 @@ import javax.persistence.*;
 public class Greeting {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "greeting")
     @SequenceGenerator(name = "greeting", sequenceName = "seq_greeting")
     private long id;
 

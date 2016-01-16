@@ -30,6 +30,7 @@ public class GreetingRepository {
         Greeting g = new Greeting();
         g.setContent(content);
         entityManager.persist(g);
+        entityManager.flush();
 
         return g.getId();
     }
