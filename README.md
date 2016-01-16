@@ -14,17 +14,17 @@ To run:
     . ./jdbc_settings.sh #can be run once per terminal
     ./gradlew bootRun
 
-This is using [https://spring.io/guides/gs/rest-service/] which runs on Tomcat underneath via spring boot.
-With spring data access set up: [https://docs.spring.io/spring-boot/docs/current/reference/html/howto-data-access.html]
+This is using https://spring.io/guides/gs/rest-service/ which runs on Tomcat underneath via spring boot.
+With spring data access set up: https://docs.spring.io/spring-boot/docs/current/reference/html/howto-data-access.html
 
 No database requests:
 
-  * [https://vast-dawn-3751.herokuapp.com/greeting?name=Jerzy]
-  * [https://vast-dawn-3751.herokuapp.com/greeting]
+  * https://vast-dawn-3751.herokuapp.com/greeting?name=Jerzy
+  * https://vast-dawn-3751.herokuapp.com/greeting
   
 Requests working with database:
   
-  * [https://vast-dawn-3751.herokuapp.com/db_greetings]
+  * https://vast-dawn-3751.herokuapp.com/db_greetings
   * https://vast-dawn-3751.herokuapp.com/db_greeting?id=x
   * https://vast-dawn-3751.herokuapp.com/db_greeting?content=Hello # PUT method
 
