@@ -3,7 +3,7 @@ Just checking possibility of creating single jar rest application with heroku de
 Heroku is passing database info via enviromental variables.
 This is taken into account in `application.properties`.
 
-If you want to use own database (or run on local machine), copy `jdbc_settings.sh.example` to `jdb_settings.sh` and fill it properly.
+If you want to use own database (or run on local postgresql), copy `jdbc_settings.sh.example` to `jdb_settings.sh` and fill it properly.
 Also remember to run `set_up_db.sql` on your database.
 
 To build:
@@ -29,3 +29,10 @@ Requests working with database:
   * https://vast-dawn-3751.herokuapp.com/db_greeting?content=Hello # PUT method
 
 It can take a bit of time before first request after deploy is served.
+
+If you want to deploy on your own heroku you need to:
+  * https://devcenter.heroku.com/articles/getting-started-with-java#introduction
+  * add `Heroku Postgres :: Database`
+
+I also suggest adding `Papertrail` for nice logs.
+
