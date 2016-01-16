@@ -1,4 +1,7 @@
+## What is this
 Just checking possibility of creating single jar rest application with heroku deployment.
+
+## Env set up
 
 Heroku is passing database info via enviromental variables.
 This is taken into account in `application.properties`.
@@ -14,8 +17,7 @@ To run:
     . ./jdbc_settings.sh #can be run once per terminal
     ./gradlew bootRun
 
-This is using https://spring.io/guides/gs/rest-service/ which runs on Tomcat underneath via spring boot.
-With spring data access set up: https://docs.spring.io/spring-boot/docs/current/reference/html/howto-data-access.html
+## Demo
 
 No database requests:
 
@@ -30,7 +32,14 @@ Requests working with database:
 
 It can take a bit of time before first request after deploy is served.
 
+## Resources
+
+This is using https://spring.io/guides/gs/rest-service/ which runs on Tomcat underneath via spring boot.
+With spring data access set up: https://docs.spring.io/spring-boot/docs/current/reference/html/howto-data-access.html
+Data layer runs on JPA(Hibernate).
+
 If you want to deploy on your own heroku you need to:
+
   * https://devcenter.heroku.com/articles/getting-started-with-gradle-on-heroku#introduction
   * add `Heroku Postgres :: Database`
 
