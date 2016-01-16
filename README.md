@@ -31,7 +31,7 @@ Requests working with database:
 It can take a bit of time before first request after deploy is served.
 
 If you want to deploy on your own heroku you need to:
-  * https://devcenter.heroku.com/articles/getting-started-with-java#introduction
+  * https://devcenter.heroku.com/articles/getting-started-with-gradle-on-heroku#introduction
   * add `Heroku Postgres :: Database`
 
 I also suggest adding `Papertrail` for nice logs.
